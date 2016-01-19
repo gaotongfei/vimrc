@@ -11,6 +11,7 @@ Bundle 'Raimondi/delimitMate'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdTree'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'posva/vim-vue'
 
 call vundle#end()
 
