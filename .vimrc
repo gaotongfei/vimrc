@@ -12,6 +12,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdTree'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'posva/vim-vue'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
