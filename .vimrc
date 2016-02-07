@@ -28,6 +28,9 @@ call vundle#end()
 
 filetype plugin indent on
 
+" treat vue file as html
+autocmd BufNewFile,BufRead *vue set filetype=html
+
 syntax enable
 set background=dark
 colorscheme solarized
@@ -35,11 +38,10 @@ colorscheme solarized
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 set number
 
-" 搜索忽略大小写
+" ignore case while seraching
 set ignorecase
 
-" 取消换行
 set nowrap
 
-" 括号匹配
+" match parentheses
 set showmatch
