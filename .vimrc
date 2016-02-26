@@ -19,7 +19,6 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Bundle 'Raimondi/delimitMate'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdTree'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'posva/vim-vue'
@@ -34,7 +33,7 @@ autocmd BufNewFile,BufRead *vue set filetype=html
 
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme molokai 
 
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 set number
