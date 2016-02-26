@@ -11,8 +11,9 @@ if has('persistent_undo')
 endif
 
 let g:neocomplete#enable_at_startup = 1
+" color scheme molokai
+let g:molokai_original = 1
 
-filetype off
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
