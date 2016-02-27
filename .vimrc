@@ -23,6 +23,9 @@ Plugin 'scrooloose/nerdTree'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'posva/vim-vue'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'ternjs/tern_for_vim'
 
 call vundle#end()
 
