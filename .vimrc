@@ -13,6 +13,7 @@ endif
 let g:neocomplete#enable_at_startup = 1
 " color scheme molokai
 let g:molokai_original = 1
+let NERDTreeIgnore = ['\.pyc$']
 
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
@@ -35,16 +36,14 @@ filetype plugin indent on
 autocmd BufNewFile,BufRead *vue set filetype=html
 
 syntax enable
-set background=dark
 colorscheme molokai 
 
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-set number
 
+set background=dark
+set number
 " ignore case while seraching
 set ignorecase
-
 set nowrap
-
 " match parentheses
 set showmatch
