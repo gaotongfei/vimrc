@@ -1,3 +1,4 @@
 if has('gui_running')
-  set guifont=Droid\ Sans\ Mono\ 10
+  set guifont=Monaco:h12
 endif
+
