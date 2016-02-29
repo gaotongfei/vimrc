@@ -42,8 +42,7 @@ autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 
 set background=dark
 set number
-" ignore case while seraching
-set ignorecase
+set ignorecase  	 " ignore case while seraching
 set nowrap
-" match parentheses
-set showmatch
+set showmatch  		 " match parentheses
+set backspace=2  	 " allow backspace in inset mode
