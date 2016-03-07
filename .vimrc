@@ -15,6 +15,8 @@ let g:neocomplete#enable_at_startup = 1
 let g:molokai_original = 1
 let NERDTreeIgnore = ['\.pyc$']
 
+let g:jsx_ext_required = 0
+
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
@@ -27,6 +29,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ternjs/tern_for_vim'
+Plugin 'fatih/vim-go'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 
