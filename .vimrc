@@ -11,9 +11,12 @@ if has('persistent_undo')
 endif
 
 let g:neocomplete#enable_at_startup = 1
+let g:ycm_path_to_python_interpreter='/usr/bin/python'
 " color scheme molokai
 let g:molokai_original = 1
 let NERDTreeIgnore = ['\.pyc$']
+
+let g:jsx_ext_required = 0
 
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
@@ -27,6 +30,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ternjs/tern_for_vim'
+Plugin 'fatih/vim-go'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 
@@ -40,10 +45,6 @@ colorscheme molokai
 
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set softtabstop=4
 set background=dark
 set number
 set ignorecase  	 " ignore case while seraching
