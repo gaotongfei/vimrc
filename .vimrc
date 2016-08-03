@@ -18,6 +18,8 @@ let NERDTreeIgnore = ['\.pyc$']
 
 let g:jsx_ext_required = 0
 
+let g:javascript_enable_domhtmlcss=1
+
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
@@ -32,6 +34,9 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'fatih/vim-go'
 Plugin 'mxw/vim-jsx'
+Plugin 'pangloss/vim-javascript'
+Plugin 'klen/python-mode'
+
 
 call vundle#end()
 
