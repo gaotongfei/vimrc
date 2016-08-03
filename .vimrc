@@ -56,3 +56,4 @@ set ignorecase  	 " ignore case while seraching
 set nowrap
 set showmatch  		 " match parentheses
 set backspace=2  	 " allow backspace in inset mode
+set nofoldenable         " disable folding
