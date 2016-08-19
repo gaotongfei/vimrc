@@ -35,7 +35,7 @@ Plugin 'ternjs/tern_for_vim'
 Plugin 'fatih/vim-go'
 Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
-Plugin 'klen/python-mode'
+Plugin 'vimwiki/vimwiki'
 
 
 call vundle#end()
@@ -57,3 +57,5 @@ set nowrap
 set showmatch  		 " match parentheses
 set backspace=2  	 " allow backspace in inset mode
 set nofoldenable         " disable folding
+set laststatus=2	 " show status line
+set statusline=%f	 " tail of the filename
