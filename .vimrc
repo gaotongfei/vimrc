@@ -1,35 +1,26 @@
 set nocompatible
-let vimDir = '$HOME/.vim'
+let vimDir='$HOME/.vim'
 let &runtimepath.=','.vimDir
 
 if has('persistent_undo')
-  let myUndoDir = expand(vimDir . '/undodir')
+  let myUndoDir=expand(vimDir . '/undodir')
   call system('mkdir ' . vimDir)
   call system('mkdir ' . myUndoDir)
-  let &undodir = myUndoDir
+  let &undodir=myUndoDir
   set undofile
 endif
 
-if has("gui_running")
-  if has("gui_macvim")
-    set guifont=Monospace:h14
-  elseif has("gui_win32")
-    set guifont=Consolas:h14
-  else
-    set guifont=Droid\ Sans\ Mono\ 14, Monospace\ 14, Bitstream\ Vera\ Sans\ Mono\ 13, DejaVu\ Sans\ Mono\ 13
-  endif
-endif
-
 if has("win32") || has("win64")
-   set guifont=DejaVu_Sans_Mono:h14:cDEFAULT
+   set guifont=DejaVu_Sans_Mono:h13:cDEFAULT
 else
-   set guifont=Droid\ Sans\ Mono\ 14
+   set guifont=Ubuntu\ Mono\ 14, Monospace\ 13
 endif
 
-let g:neocomplete#enable_at_startup = 1
 let g:ycm_path_to_python_interpreter='/usr/bin/python'
-let g:molokai_original = 1
-let NERDTreeIgnore = ['\.pyc$']
+let g:molokai_original=1
+let NERDTreeIgnore=['\.pyc$']
+
+let g:jsx_ext_required=0
 
 let g:javascript_enable_domhtmlcss=1
 
