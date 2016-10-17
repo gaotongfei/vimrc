@@ -12,7 +12,6 @@ endif
 
 let g:neocomplete#enable_at_startup = 1
 let g:ycm_path_to_python_interpreter='/usr/bin/python'
-" color scheme molokai
 let g:molokai_original = 1
 let NERDTreeIgnore = ['\.pyc$']
 
