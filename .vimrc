@@ -10,6 +10,22 @@ if has('persistent_undo')
   set undofile
 endif
 
+if has("gui_running")
+  if has("gui_macvim")
+    set guifont=Monospace:h14
+  elseif has("gui_win32")
+    set guifont=Consolas:h14
+  else
+    set guifont=Droid\ Sans\ Mono\ 14, Monospace\ 14, Bitstream\ Vera\ Sans\ Mono\ 13, DejaVu\ Sans\ Mono\ 13
+  endif
+endif
+
+if has("win32") || has("win64")
+   set guifont=DejaVu_Sans_Mono:h14:cDEFAULT
+else
+   set guifont=Droid\ Sans\ Mono\ 14
+endif
+
 let g:neocomplete#enable_at_startup = 1
 let g:ycm_path_to_python_interpreter='/usr/bin/python'
 let g:molokai_original = 1
@@ -24,13 +40,12 @@ Plugin 'VundleVim/Vundle.vim'
 Bundle 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdTree'
 Plugin 'davidhalter/jedi-vim'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ternjs/tern_for_vim'
-Plugin 'fatih/vim-go'
 Plugin 'pangloss/vim-javascript'
-Plugin 'vimwiki/vimwiki'
+Plugin 'Valloric/YouCompleteMe'
+
 
 call vundle#end()
 
