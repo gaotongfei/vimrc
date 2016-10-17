@@ -13,7 +13,7 @@ endif
 if has("win32") || has("win64")
    set guifont=DejaVu_Sans_Mono:h13:cDEFAULT
 else
-   set guifont=Ubuntu\ Mono\ 14, Monospace\ 13
+   set guifont=Ubuntu\ Mono\ 14
 endif
 
 let g:ycm_path_to_python_interpreter='/usr/bin/python'
@@ -59,3 +59,6 @@ set backspace=2  	 " allow backspace in inset mode
 set nofoldenable         " disable folding
 set laststatus=2	 " show status line
 set statusline=%f	 " tail of the filename
+set guioptions-=m	 " remove menu bar
+set guioptions-=T	 " remove toolbar
+set guioptions-=r	 " remove scrollbar
