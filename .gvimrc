@@ -1,4 +1,4 @@
-if has('gui_running')
-  set guifont=Monaco:h12
+if has('linux')
+  set guifont=Monospace\ 14
 endif
 
