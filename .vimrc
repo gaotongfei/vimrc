@@ -15,8 +15,6 @@ let g:ycm_path_to_python_interpreter='/usr/bin/python'
 let g:molokai_original = 1
 let NERDTreeIgnore = ['\.pyc$']
 
-let g:jsx_ext_required = 0
-
 let g:javascript_enable_domhtmlcss=1
 
 set rtp+=~/.vim/bundle/Vundle.vim/
@@ -26,16 +24,13 @@ Plugin 'VundleVim/Vundle.vim'
 Bundle 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdTree'
 Plugin 'davidhalter/jedi-vim'
-Plugin 'posva/vim-vue'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'fatih/vim-go'
-Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
 Plugin 'vimwiki/vimwiki'
-
 
 call vundle#end()
 

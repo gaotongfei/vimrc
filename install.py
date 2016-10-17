@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import shutil, errno, os, subprocess
 
 exists = os.path.exists
