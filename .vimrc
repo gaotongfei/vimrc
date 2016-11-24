@@ -16,7 +16,8 @@ else
    set guifont=Ubuntu\ Mono\ 14
 endif
 
-let g:ycm_path_to_python_interpreter='/usr/bin/python'
+" let g:ycm_path_to_python_interpreter='/usr/bin/python'
+let g:ycm_python_binary_path='/usr/bin/python3'
 let g:molokai_original=1
 let NERDTreeIgnore=['\.pyc$']
 
@@ -35,7 +36,9 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'nvie/vim-flake8'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'ntpeters/vim-better-whitespace'
 
 
 call vundle#end()
@@ -46,7 +49,7 @@ filetype plugin indent on
 autocmd BufNewFile,BufRead *vue set filetype=html
 
 syntax enable
-colorscheme molokai 
+colorscheme molokai
 
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 
@@ -62,3 +65,4 @@ set statusline=%f	 " tail of the filename
 set guioptions-=m	 " remove menu bar
 set guioptions-=T	 " remove toolbar
 set guioptions-=r	 " remove scrollbar
+set colorcolumn=80
