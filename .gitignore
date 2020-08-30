@@ -1,0 +1,6 @@
+autoload
+.DS_Store
+*.swo
+*.swp
+undodir
+plugge
